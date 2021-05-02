@@ -1,6 +1,6 @@
 * {
   margin: 0px;
-  background: #1e242a;
+  background: rgb(54, 54, 54);
 }
 .App {
   width: 100%;
@@ -11,18 +11,18 @@
 #box1 {
   width: 530px;
   height: 625px;
-  background-image: url("./1.png");
+  background-image: url("1.png");
   position: absolute;
   bottom: -100%;
   left: 30%;
   animation: anim 2s forwards, anim2 3s forwards 3s;
 }
-#box1::after {
+#box1:after {
   content: "";
   position: absolute;
   width: 530px;
   height: 625px;
-  background-image: url("./2.png");
+  background-image: url("2.png");
   left: 0px;
   z-index: -1;
 }
@@ -49,11 +49,11 @@
   height: auto;
   font-family: "Bahnschrift Condensed";
   color: white;
-  font-size: 10em;
+  font-size: 8em;
   font-weight: 500;
   line-height: 130px;
   position: absolute;
-  top: 250px;
+  top: 200px;
   left: 100px;
   overflow: hidden;
 }
@@ -81,19 +81,23 @@
 }
 #logo {
   float: left;
-  margin-left: 100px;
-  margin-top: 20px;
+  width: auto;
+  margin-left: 50px;
+  margin-top: 1.5rem;
 }
 #logo h2 {
-  width: 50px;
+  width: auto;
+  font-size: 2em;
+  color: white;
+  font-family: Arial, sans-serif;
 }
 #menu {
-  font-family: "Behnschrift Condensed";
+  font-family: Arial, sans-serif;
   font-size: 14px;
   color: white;
   letter-spacing: 2px;
-  margin-right: 150px;
-  margin-top: 20px;
+  margin-right: 3rem;
+  margin-top: 2rem;
   float: right;
 }
 #menu ul {

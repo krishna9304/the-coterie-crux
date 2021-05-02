@@ -18,7 +18,7 @@ export default function App() {
       <div id="box3">
         <div id="container">
           <div id="logo">
-            <h2>LOGO</h2>
+            <h2>CRUx</h2>
           </div>
           <div id="menu">
             <ul>
