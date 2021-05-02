@@ -17,7 +17,7 @@
   left: 30%;
   animation: anim 2s forwards, anim2 3s forwards 3s;
 }
-#box1:after {
+#box1::after {
   content: "";
   position: absolute;
   width: 530px;
