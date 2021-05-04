@@ -6,8 +6,6 @@
   height: 100%;
   position: absolute;
   overflow: hidden;
-  /* background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url("./images/1.jpg"); */
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -128,10 +126,6 @@ svg {
     top: 0%;
   }
 }
-/* #svgCircle {
-  stroke-dasharray: 1256;
-  stroke-dashoffset: 1256;
-} */
 span {
   position: absolute;
   height: 3rem;
@@ -142,26 +136,6 @@ span {
   display: block;
   cursor: pointer;
 }
-/* #step1 {
-  right: -223px;
-  bottom: 88px;
-}
-#step2 {
-  right: -87px;
-  bottom: -104px;
-}
-#step3 {
-  right: 138px;
-  bottom: -30px;
-}
-#step4 {
-  right: 138px;
-  bottom: 203px;
-}
-#step5 {
-  right: -87px;
-  bottom: 274px;
-} */
 @keyframes anim5 {
   from {
     background: rgba(255, 255, 255, 0);

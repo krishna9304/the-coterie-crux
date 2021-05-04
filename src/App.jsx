@@ -14,13 +14,9 @@ export default function App() {
     var pi = Math.PI;
     return degrees * (pi / 180);
   };
-
-  const [seconds, setSeconds] = useState(0);
-
   useEffect(() => {
     const interval = setInterval(() => {
       setAngle((angle) => angle - 0.1);
-      console.log("lola", seconds);
     }, 1000 / 60);
     return () => clearInterval(interval);
   }, []);
@@ -34,7 +30,7 @@ export default function App() {
       }}
     >
       <div id="box1">
-        <svg height="400" width="400">
+        <svg height="402" width="402">
           <circle
             r="200"
             cx="201"
@@ -46,7 +42,7 @@ export default function App() {
         </svg>
         <svg height="402" width="402">
           <circle
-            r="200"
+            r="100"
             cx="201"
             cy="201"
             strokeWidth="1px"
@@ -62,15 +58,11 @@ export default function App() {
         <div id="circleBox" z>
           <span
             onClick={() => {
-              if (offset === 251) {
+              setoffset(1256);
+              setTimeout(() => {
                 setoffset(0);
-                setbackground(background1);
-              } else if (offset === 0) {
-                setoffset(1256);
-                setbackground(background1);
-              } else {
-                setbackground(background1);
-              }
+              }, 1000);
+              setbackground(background1);
             }}
             style={{
               left: `${200 * Math.sin(degrees_to_radians(angle)) - 23}px`,
@@ -80,7 +72,10 @@ export default function App() {
           ></span>
           <span
             onClick={() => {
-              setoffset(1006);
+              setoffset(1256);
+              setTimeout(() => {
+                setoffset(0);
+              }, 1000);
               setbackground(background2);
             }}
             style={{
@@ -93,7 +88,10 @@ export default function App() {
           ></span>
           <span
             onClick={() => {
-              setoffset(754);
+              setoffset(1256);
+              setTimeout(() => {
+                setoffset(0);
+              }, 1000);
               setbackground(background3);
             }}
             style={{
@@ -108,7 +106,10 @@ export default function App() {
           ></span>
           <span
             onClick={() => {
-              setoffset(502);
+              setoffset(1256);
+              setTimeout(() => {
+                setoffset(0);
+              }, 1000);
               setbackground(background4);
             }}
             style={{
@@ -123,7 +124,10 @@ export default function App() {
           ></span>
           <span
             onClick={() => {
-              setoffset(251);
+              setoffset(1256);
+              setTimeout(() => {
+                setoffset(0);
+              }, 1000);
               setbackground(background5);
             }}
             style={{
