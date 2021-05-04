@@ -14,7 +14,6 @@ export default function App() {
     var pi = Math.PI;
     return degrees * (pi / 180);
   };
-
   useEffect(() => {
     const interval = setInterval(() => {
       setAngle((angle) => angle - 0.1);
@@ -52,15 +51,18 @@ export default function App() {
             style={{
               strokeDasharray: "1256",
               strokeDashoffset: `${offset}`,
-              transition: "3s",
+              transition: "1s",
             }}
           />
         </svg>
         <div id="circleBox" z>
           <span
             onClick={() => {
+              setoffset(1256);
+              setTimeout(() => {
                 setoffset(0);
-                setbackground(background1);
+              }, 1000);
+              setbackground(background1);
             }}
             style={{
               left: `${200 * Math.sin(degrees_to_radians(angle)) - 23}px`,
@@ -70,7 +72,10 @@ export default function App() {
           ></span>
           <span
             onClick={() => {
-              setoffset(0);
+              setoffset(1256);
+              setTimeout(() => {
+                setoffset(0);
+              }, 1000);
               setbackground(background2);
             }}
             style={{
@@ -83,7 +88,10 @@ export default function App() {
           ></span>
           <span
             onClick={() => {
-              setoffset(0);
+              setoffset(1256);
+              setTimeout(() => {
+                setoffset(0);
+              }, 1000);
               setbackground(background3);
             }}
             style={{
@@ -98,7 +106,10 @@ export default function App() {
           ></span>
           <span
             onClick={() => {
-              setoffset(0);
+              setoffset(1256);
+              setTimeout(() => {
+                setoffset(0);
+              }, 1000);
               setbackground(background4);
             }}
             style={{
@@ -113,7 +124,10 @@ export default function App() {
           ></span>
           <span
             onClick={() => {
-              setoffset(0);
+              setoffset(1256);
+              setTimeout(() => {
+                setoffset(0);
+              }, 1000);
               setbackground(background5);
             }}
             style={{
