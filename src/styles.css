@@ -170,7 +170,7 @@ span {
     background: rgba(255, 255, 255, 0.487);
   }
 }
-/* #circleBox {
+/* #box1 {
   transform-origin: center;
   transform: translateY(626px) translateX(-1px);
   animation: spin 10s forwards 10s;
