@@ -142,7 +142,7 @@ span {
   display: block;
   cursor: pointer;
 }
-#step1 {
+/* #step1 {
   right: -223px;
   bottom: 88px;
 }
@@ -161,7 +161,7 @@ span {
 #step5 {
   right: -87px;
   bottom: 274px;
-}
+} */
 @keyframes anim5 {
   from {
     background: rgba(255, 255, 255, 0);
