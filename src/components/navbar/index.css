@@ -1,3 +1,55 @@
+#box3 {
+  overflow: hidden;
+}
+#container {
+  width: 100%;
+  position: absolute;
+  top: -100%;
+  animation: anim4 1s forwards 1.5s;
+}
+#logo {
+  float: left;
+  width: auto;
+  margin-left: 50px;
+  margin-top: 1.5rem;
+}
+#logo h2 {
+  width: auto;
+  font-size: 2em;
+  color: rgb(255, 255, 255);
+  font-family: Arial, sans-serif;
+  cursor: pointer;
+}
+#menu {
+  font-family: Arial, sans-serif;
+  font-size: 0.7rem;
+  color: rgba(255, 255, 255, 0.644);
+  letter-spacing: 2px;
+  margin-right: 3rem;
+  margin-top: 2rem;
+  float: right;
+}
+#menu ul {
+  list-style: none;
+}
+#menu ul li {
+  display: inline-block;
+  margin: 0 2rem;
+  padding: 3px;
+}
+#menu ul li:hover {
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  position: relative;
+}
+@keyframes anim4 {
+  from {
+    top: -100%;
+  }
+  to {
+    top: 0%;
+  }
+}
 .cover {
   position: fixed;
   height: 100vh;
@@ -27,4 +79,11 @@
   to {
     left: 0;
   }
+}
+
+.nav-link-gdc {
+  color: rgba(255, 255, 255, 0.652);
+}
+.nav-link-gdc-active {
+  text-decoration: underline;
 }

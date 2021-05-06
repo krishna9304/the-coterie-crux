@@ -1,1 +1,23 @@
+.fade-appear,
+.fade-enter {
+  opacity: 0.3;
+  z-index: 1;
+  transition-duration: 2000ms;
+}
+.fade-appear-active,
+.fade-enter.fade-enter-active {
+  opacity: 1;
+  transition: opacity 300ms linear 150ms;
+  transition-duration: 2000ms;
+}
 
+.fade-exit {
+  opacity: 1;
+  transition-duration: 2000ms;
+}
+
+.fade-exit.fade-exit-active {
+  opacity: 0.3;
+  transition: opacity 150ms linear;
+  transition-duration: 2000ms;
+}
