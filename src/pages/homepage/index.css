@@ -1,0 +1,332 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat&display=swap");
+* {
+  margin: 0px;
+}
+.home {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+svg {
+  position: absolute;
+  bottom: -47%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#box1 {
+  width: 530px;
+  height: 625px;
+  position: absolute;
+  bottom: -100%;
+  left: 50%;
+  animation: anim 1s forwards, anim2 1.5s forwards 1.5s;
+  z-index: 1;
+  transform: translate(-50%, -50%);
+}
+#box1::after {
+  position: absolute;
+  width: 530px;
+  height: 625px;
+  left: 0px;
+  z-index: -1;
+}
+@keyframes anim {
+  from {
+    bottom: -100%;
+  }
+  to {
+    bottom: -18%;
+  }
+}
+@keyframes anim2 {
+  from {
+    left: 50%;
+    width: 530px;
+  }
+  to {
+    width: 0px;
+    left: 75%;
+  }
+}
+#box2 {
+  font-family: "Open Sans", sans-serif;
+  color: rgba(255, 255, 255, 0.713);
+  position: absolute;
+  top: 35%;
+  left: 10%;
+  overflow: hidden;
+}
+#text {
+  position: relative;
+  left: -100%;
+  animation: anim3 1s forwards 1.5s;
+  line-height: 105%;
+  font-size: 1.5rem;
+}
+@keyframes anim3 {
+  from {
+    left: -100%;
+  }
+  to {
+    left: 0%;
+  }
+}
+#box3 {
+  overflow: hidden;
+}
+#container {
+  width: 100%;
+  position: absolute;
+  top: -100%;
+  animation: anim4 1s forwards 1.5s;
+}
+#logo {
+  float: left;
+  width: auto;
+  margin-left: 50px;
+  margin-top: 1.5rem;
+}
+#logo h2 {
+  width: auto;
+  font-size: 2em;
+  color: rgb(255, 255, 255);
+  font-family: Arial, sans-serif;
+  cursor: pointer;
+}
+#menu {
+  font-family: Arial, sans-serif;
+  font-size: 0.7rem;
+  color: rgba(255, 255, 255, 0.644);
+  letter-spacing: 2px;
+  margin-right: 3rem;
+  margin-top: 2rem;
+  float: right;
+}
+#menu ul {
+  list-style: none;
+}
+#menu ul li {
+  display: inline-block;
+  margin: 0 2rem;
+  padding: 3px;
+}
+#menu ul li:hover {
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  position: relative;
+}
+@keyframes anim4 {
+  from {
+    top: -100%;
+  }
+  to {
+    top: 0%;
+  }
+}
+span {
+  position: absolute;
+  animation: anim5 1.5s forwards 3s;
+  border-radius: 50%;
+  display: block;
+  cursor: pointer;
+}
+@keyframes anim5 {
+  from {
+    height: 0rem;
+    width: 0rem;
+  }
+  to {
+    height: 3rem;
+    width: 3rem;
+    border: 2px solid rgba(255, 255, 255, 0.748);
+  }
+}
+#mid-photo {
+  position: absolute;
+  bottom: -2%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-size: cover;
+  background-repeat: no-repeat;
+  animation: anim6 1.5s forwards 3s;
+}
+#prof-text {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  color: rgba(255, 255, 255, 0);
+  font-size: 1rem;
+  display: flex;
+  flex-direction: row;
+  width: max-content;
+  font-family: "Open Sans", sans-serif;
+  transform: translate(-50%, -50%);
+  animation: fade-in 3s forwards 4s;
+}
+@keyframes fade-in {
+  from {
+    color: rgba(255, 255, 255, 0);
+  }
+  to {
+    color: rgb(255, 255, 255);
+  }
+  0% {
+    position: absolute;
+    opacity: 0;
+  }
+
+  75% {
+    position: absolute;
+    opacity: 1;
+  }
+}
+
+@keyframes anim6 {
+  from {
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 0rem;
+    width: 0rem;
+  }
+  to {
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 1px solid rgba(255, 255, 255, 0.501);
+    height: 10rem;
+    width: 10rem;
+  }
+}
+#svgcircle {
+  stroke-dashoffset: 1256;
+  opacity: 0;
+  animation: anim7 1.5s forwards 3s;
+}
+@keyframes anim7 {
+  from {
+    opacity: 0;
+    stroke-dashoffset: 1256;
+  }
+  to {
+    opacity: 1;
+    stroke-dashoffset: 0;
+  }
+}
+.social-img {
+  height: 1.75rem;
+  width: 1.75rem;
+  position: absolute;
+  bottom: -2%;
+  left: 50%;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  animation: fade-in2 3s forwards 5s;
+  cursor: pointer;
+}
+hr {
+  opacity: 0;
+  animation: fade-in2 3s forwards 5s;
+}
+@keyframes fade-in2 {
+  0% {
+    position: absolute;
+    opacity: 0;
+  }
+
+  100% {
+    position: absolute;
+    opacity: 1;
+  }
+}
+#social-links {
+  position: absolute;
+  bottom: -6%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  height: 3rem;
+  width: 5rem;
+}
+#insta {
+  left: auto;
+}
+#linkedin {
+  left: 100%;
+}
+#text #quote {
+  font-family: "Dancing Script", cursive;
+  width: 90%;
+  padding: 0.2rem;
+  opacity: 0;
+  animation: fade 2s forwards 3s;
+}
+#text #about {
+  font-size: 3rem;
+  padding: 0.5rem;
+  opacity: 0;
+  animation: fade 3s forwards 4s;
+}
+#text #skills {
+  font-family: "Caveat", cursive;
+  width: max-content;
+  font-size: 1.2rem;
+  padding: 00.2rem;
+  opacity: 0;
+  animation: fade 3s forwards 4s;
+}
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+#discord {
+  position: absolute;
+  bottom: 2.5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 0.5rem 3rem;
+  border-radius: 1rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  animation-iteration-count: infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition-duration: 300ms;
+}
+#discord-logo {
+  height: 2.3rem;
+  width: 2.3rem;
+  filter: invert();
+  left: 15%;
+}
+#discord:hover {
+  background-color: #000;
+  cursor: pointer;
+  filter: invert();
+}
+#arrow {
+  position: absolute;
+  bottom: -2%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: bounce 0.2s alternate 0.2s;
+  animation-iteration-count: infinite;
+}
+@keyframes bounce {
+  from {
+    bottom: 2%;
+  }
+  to {
+    bottom: 0%;
+  }
+}
